@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>task6</title>
+</head>
+<body>
+  <script>
+    const user = {
+      name: 'kaam25',
+      sayName() {
+        console.log(this.name);
+      }
+    };
+    // using destructing 
+    const { sayName } = user;
+    const boundSayName = sayName.bind(user);
+    //bind is simliar to call but more used due to more easily acces to multiple element
+
+    boundSayName();  
+  </script>
+</body>
+</html>

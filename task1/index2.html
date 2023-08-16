@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>task2</title>
+</head>
+<body>
+   <div id="myDiv" style="width: 500px; height: 500px; border: 2px solid black;">
+    <p>Click the button to change the background color.</p>
+  </div> 
+  <button id="changeColorButton" onclick="Blue()">Change Color</button>
+
+  <script>
+    // function to get the div and cahnge the color of div
+   function Red() {
+      var myDiv = document.getElementById("myDiv");
+      myDiv.style.backgroundColor = "red";
+    } 
+    
+    Red();//calling the function or we can use setimeout tocall after a particular interval
+    function Blue() {
+            // function to get the div and cahnge the color of div
+      var myDiv = document.getElementById("myDiv");
+      myDiv.style.backgroundColor = "blue";
+    }
+
+    
+    
+  </script>
+</body>
+</html>

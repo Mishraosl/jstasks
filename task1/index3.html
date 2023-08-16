@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>task2</title>
+</head>
+<body>
+  <ul id="myList"></ul>
+  <button id="addItemButton" onclick="additem()">Add Item</button>
+  <button id="removeFirstItemButton" onclick="removefirstItem()">Remove First Item</button>
+
+  <script>
+    // getting the list and collecting the promted text
+    function additem() {
+      const myList = document.getElementById('myList');
+      const newitemText = prompt('Enter the item:');
+     //checking and putting the value  i.e appending the task
+      if (newItemText) {
+        const newitem = document.createElement('li');
+        newItem.textContent = newitemText;
+        myList.appendChild(newitem);
+      }
+    }
+
+    //removing the first element 
+    //we can make use of given dom method too which is firstchild
+    function removefirstItem() {
+      const myList = document.getElementById('myList');
+      
+      if (myList.children.length > 0) {
+        myList.removeChild(myList.children[0]);
+      }
+    }
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Object</title>
+</head>
+<body>
+  <p id="carrrrr"></p>
+
+  <script>
+    // obejct car 
+    const car = {
+      brand: 'Toyota',
+      model: 'Camry',
+      start: function() {
+        const outputElement = document.getElementById('carrrrr');
+        outputElement.textContent = `Starting ${this.brand} ${this.model}`;
+      }
+    };
+    //using this keyword to refrencig it 
+    
+    car.start();
+  </script>
+</body>
+</html>

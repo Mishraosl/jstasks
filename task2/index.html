@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>task1</title>
+</head>
+<body>
+  <script>
+    // for loop
+    function sumarray1(numbers) {
+      let sum = 0;
+      for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+      }
+      return sum;
+    }
+
+    // usinf for each
+    function sumarray2(numbers) {
+      let sum = 0;
+      numbers.forEach(function(number) {
+        sum += number;
+      });
+      return sum;
+    }
+
+    // reduce and similar can be implented using map intial is given 0
+    function sumarray3(numbers) {
+      return numbers.reduce(function(acc, number) {
+        return acc + number;
+      }, 0);
+    }
+
+    
+    const numbers = [1, 2, 3, 4, 5];
+    console.log(sumarray1(numbers)); 
+    console.log(sumarray2(numbers)); 
+    console.log(sumarray3(numbers));
+  </script>
+</body>
+</html>

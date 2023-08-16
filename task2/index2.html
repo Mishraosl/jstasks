@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>task2</title>
+</head>
+<body>
+  <script>
+    
+    const person = {
+      name: 'mishra',
+      age: 25,
+      email: 'ajalj@sjlks.com'
+    };
+
+    
+    function printPersonDetails(person) {
+      console.log('Name:', person.name);
+      console.log('Age:', person.age);
+      console.log('Email:', person.email);
+    }
+
+    /*
+    printed using destruuctring
+    function printPersonDetails({ name, age, email }) {
+      console.log('Name:', name);
+      console.log('Age:', age);
+      console.log('Email:', email);
+    } */
+    printPersonDetails(person);
+  </script>
+</body>
+</html>

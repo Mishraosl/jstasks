@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Window Manipulation</title>
+</head>
+<body>
+    
+<!--
+
+a paragraph tag with span in it to display url of currnet window
+button on which when click opens new window with width 500 height 400 and on blank page itself
+
+
+
+
+
+--> 
+
+    
+
+  <p>url_______________<span id="myurl"></span></p>
+  <button id="btn1" onclick="openNewWindow()">click me open</button>
+
+  <script>
+
+    /*
+    using dom to get span using id and displaying using
+    textcontent
+    alerting just for checking purpose
+    */
+      const currentUrlSpan = document.getElementById('myurl');
+      currentUrlSpan.textContent = window.location;
+
+        /*
+    function can be created to use readblity but now here it is fine
+    */
+    
+    alert(window.location);
+    /*
+    function to open new window using window obejct 
+
+    we can use this to because here it is refreing to window object
+    */
+    function openNewWindow() {
+      window.open('', '_blank', 'width=500,height=400');
+    }
+
+    /*
+    added just to do proper onloading
+    */
+    window.addEventListener('load', displayCurrentURL);
+    
+  </script>
+</body>
+</html>
